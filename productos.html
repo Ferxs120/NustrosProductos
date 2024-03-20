@@ -1,0 +1,251 @@
+<!DOCTYPE html
+    >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros productos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0BFCCE;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+            height: auto; 
+            background-color: white;
+            transition: box-shadow 0.3s; 
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 100%;
+            margin: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px; 
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .card:hover .overlay {
+            opacity: 0.5;
+        }
+
+        .card:hover .text {
+            opacity: 1;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Titulo principal de menu -->
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="text-center text-black">Nuestros productos</h1>
+</section>
+<!-- Pizza seccion -->
+<section class="p-5" style="background-color: #075D91;">
+    <div class="container">
+        <h2 class="text-center pb-3 text-white">Pizzas</h2>
+        <div class="row">
+             <!-- estructura para agregar o quitar pizzas -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzahawaiana.jpg" class="card-img-top" alt="Pizza Hawaiana">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Hawaiana<br>$22</div>
+                </div>
+            </div>
+            <!-- Pizzas agregadas con la estructura anterior -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzapepperoni.jpg" class="card-img-top" alt="Pizza Pepperoni">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Pepperoni<br>$18</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzajamon.jpg" class="card-img-top" alt="Pizza jamon">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Jamón<br>$18</div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzamargherita.jpg" class="card-img-top" alt="Pizza Margherita">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Margherita<br>$25</div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzatocino.jpg" class="card-img-top" alt="Pizza Tocino">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Tocino<br>$22</div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzahongos.jpg" class="card-img-top" alt="Pizza Hongos">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Hongos<br>$21</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pizzacarbonara.jpg" class="card-img-top" alt="Pizza Carbonara">
+                    <div class="overlay"></div>
+                    <div class="text">Pizza Carbonara<br>$23</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pastas Titulo -->
+<section class="p-5" style="background-color: white;">
+    <div class="container">
+        <h2 class="text-center pb-3 text-primary">Pastas</h2>
+        <!-- Estructura para agregar pastas -->
+        <div class="row">
+           <!-- estructura para agregar o quitar pastas -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pastalasagna.jpg" class="card-img-top" alt="Lasagna">
+                    <div class="overlay"></div>
+                    <div class="text">Lasagna<br>$9.50</div>
+                </div>
+            </div>
+            <!-- Pastas agregadas con la estructura anterior -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pastaspaghetti.jpg" class="card-img-top" alt="Spaghetti">
+                    <div class="overlay"></div>
+                    <div class="text">Spaghetti<br>$7</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pastatortelli.jpg" class="card-img-top" alt="Tortelli">
+                    <div class="overlay"></div>
+                    <div class="text">Tortelli<br>$7.50</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pastaravioli.jpg" class="card-img-top" alt="Ravioli">
+                    <div class="overlay"></div>
+                    <div class="text">Ravioli<br>$8.50</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Ensaladas seccion -->
+<section class="p-5" style="background-color: #075D91;">
+    <div class="container">
+        <h2 class="text-center pb-3 text-white">Ensaladas</h2>
+        <div class="row">
+            <!-- Estructura a seguir para quitar o agregar ensaladas -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/ensaladacaesar.jpg" class="card-img-top" alt="Ensalada Caesar">
+                    <div class="overlay"></div>
+                    <div class="text">Ensalada Caesar<br>$9.50</div>
+                </div>
+            </div>
+            <!-- Ensaladas agregadas con la estructura de antes -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/ensaladacapricciosa.jpg" class="card-img-top" alt="Ensalada Capricciosa">
+                    <div class="overlay"></div>
+                    <div class="text">Ensalada Capricciosa<br>$8.50</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/ensaladalunarossa.jpg" class="card-img-top" alt="Ensalada Luna Rossa">
+                    <div class="overlay"></div>
+                    <div class="text">Ensalada Luna Rossa<br>$8</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/ensaladacaligola.jpg" class="card-img-top" alt="Ensalada Caligola">
+                    <div class="overlay"></div>
+                    <div class="text">Ensalada Caligola<br>$7.50</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Postres seccion -->
+<section class="p-5" style="background-color: white;">
+    <div class="container">
+        <h2 class="text-center pb-3 text-primary">Postres</h2>
+        <div class="row">
+            <!-- Estructura a seguir para agregar mas postres -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/postretiramisu.jpg" class="card-img-top" alt="Tiramisú">
+                    <div class="overlay"></div>
+                    <div class="text">Tiramisú<br>$5</div>
+                </div>
+            </div>
+            <!-- Postres agregados con la estructura anterior -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/postrepannacotta.jpg" class="card-img-top" alt="Panna Cotta">
+                    <div class="overlay"></div>
+                    <div class="text">Panna Cotta<br>$4.50</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/postrechocolate.jpg" class="card-img-top" alt="Pastel de Chocolate">
+                    <div class="overlay"></div>
+                    <div class="text">Pastel de Chocolate<br>$4.25</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/postregelato.jpg" class="card-img-top" alt="Gelato">
+                    <div class="overlay"></div>
+                    <div class="text">Gelato<br>$4.50</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
